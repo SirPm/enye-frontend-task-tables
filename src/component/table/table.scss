@@ -7,7 +7,7 @@
 .table-div {
     overflow-x: auto;
     border: 1px solid #ddd;
-    height: 75vh;
+    height: 73vh;
     margin-top: 2%;
 } 
 
@@ -112,6 +112,34 @@ button:disabled {
     .page-jumper {
         width: 15%;
         padding: 6px;
+    }
+}
+
+.no-record {
+    position: absolute;
+    top: 54%;
+    left: 35%;
+    border: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .no-record {
+        left: 30%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .no-record {
+        left: 25%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .no-record {
+        left: 10%;
+        top: 50%;
+        width: 80%;
+        text-align: center;
     }
 }
 

@@ -99,12 +99,7 @@ const Table = ({ columns, data }) => {
                                 )
                             ) : (
                                 <tr>
-                                    <td style={{
-                                        position: 'absolute',
-                                        top: '54%',
-                                        left: '35%',
-                                        border: 'none',
-                                    }}>Sorry, No Record Found For That Search Query...</td>
+                                    <td className="no-record" >Sorry, No Record Found For That Search Query...</td>
                                 </tr>
                             )
                         }
