@@ -1,0 +1,221 @@
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+}
+
+.table-div {
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    height: 75vh;
+    margin-top: 2%;
+} 
+
+.table-div::-webkit-scrollbar {
+    width: 17px;
+}
+
+.table-div::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+.table-div::-webkit-scrollbar-thumb {
+    background: lightslategrey; 
+    border-radius: 10px;
+}
+
+.table-div::-webkit-scrollbar-thumb:hover {
+    background: #635f5f; 
+}
+
+.table-div thead th { 
+    position: sticky; 
+    top: 0; 
+    background: #dee2e6;
+    z-index: 200;
+}
+
+.table-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .select-div {
+        width: 20%;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+
+    .select {
+        border: 1px solid #ced4da;
+        transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        width: auto;
+        padding: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        vertical-align: middle;
+        border-radius: 5px;
+        margin-left: 1%;
+    }
+
+    #entries {
+        margin-left: 1%;
+    }
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #dee2e6;
+}
+  
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.button {
+    color: #fff;
+    background-color: #4285f4;
+    border-radius: .125rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: all .2s linear;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-next {
+    background-color: #00c851;
+}
+
+button:disabled {
+    background-color: #bbbdc0;
+}
+
+.pagination {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#paginationIdentifier {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    label {
+        margin-left: 34%;
+    }
+
+    .page-jumper {
+        width: 15%;
+        padding: 6px;
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    .button {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 850px) {  
+    #buttons {
+        width: 70%;
+    }
+    
+    #paginationIdentifier {
+    
+        label {
+            margin-left: 22%;
+        }
+    }
+}
+
+@media only screen and (max-width: 770px) {  
+    #buttons {
+        width: 90%;
+    }
+
+    #paginationIdentifier {
+    
+        label {
+            margin-left: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width: 710px) {  
+    .button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    #buttons {
+        width: 100%;
+    }
+
+    #paginationIdentifier {
+    
+        label {
+            margin-left: 0%;
+            font-size: 14px;
+        }
+
+        .page-jumper {
+            width: 20%;
+            padding: 4px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 601px) {  
+    .pagination {
+        flex-direction: column;
+    }
+
+    #buttons {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    #paginationIdentifier {
+        justify-content: center;
+    
+        label {
+            margin-left: 0%;
+            font-size: 14px;
+        }
+
+        .page-jumper {
+            width: 20%;
+            padding: 4px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {  
+    .table-top {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .search-table {
+        margin-top: 2%;
+    }
+
+    .table-div {
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {  
+    .button {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
