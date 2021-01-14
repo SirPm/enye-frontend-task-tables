@@ -14,3 +14,17 @@ body {
   border-bottom: 1px solid black;
   text-transform: capitalize;
 }
+
+@media only screen and (max-width: 800px) {
+  .table-h2 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .table-h2 {
+    text-align: center;
+    width: 85%;
+  }
+}

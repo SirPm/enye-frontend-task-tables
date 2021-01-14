@@ -82,7 +82,7 @@ const TableOverview = () => {
         const getData = async () => {
             let response = await fetch('https://api.enye.tech/v1/challenge/records');
             let result = await response.json();
-            console.log(result.records.profiles);
+            // console.log(result.records.profiles);
             setData(result.records.profiles);
             setLoadingData(false);
         }

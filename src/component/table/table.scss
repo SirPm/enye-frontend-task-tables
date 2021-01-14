@@ -230,10 +230,14 @@ button:disabled {
     .table-top {
         flex-direction: column;
         align-items: normal;
+
+        select {
+            margin-left: 20%;
+        }
     }
 
     .search-table {
-        margin-top: 2%;
+        margin-top: 3%;
     }
 
     .table-div {
